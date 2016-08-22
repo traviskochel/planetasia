@@ -6,6 +6,7 @@ activate :blog do |blog|
   blog.prefix = "posts"
   blog.permalink = "{title}.html"
   blog.sources = "{title}.html"
+  blog.layout = "post"
 end
 
 
