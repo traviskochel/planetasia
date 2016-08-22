@@ -11,3 +11,9 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 # Middleman Gems
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
+gem "middleman-sprockets", "~> 4.0.0.rc"
+gem "middleman-blog"
+gem 'redcarpet', '~> 3.3', '>= 3.3.3'
+
+# For feed.xml.builder
+gem "builder", "~> 3.0"

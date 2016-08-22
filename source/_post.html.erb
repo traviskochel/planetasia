@@ -1,0 +1,4 @@
+<% link_to post, class: 'post' do %>
+  <h2><%= post.title %></h2>
+  <img src='/images/posts/<%= post.data.image %>' alt='<%= post.title %>' />
+<% end %>
