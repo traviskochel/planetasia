@@ -1,0 +1,18 @@
+{
+  "name": "planetize",
+  "version": "1.0.0",
+  "description": "planet illustrations",
+  "scripts": {
+    "deploy": "middleman build && surge ./build planetize.surge.sh && rm -rf build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/traviskochel/planetasia.git"
+  },
+  "author": "Travis Kochel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/traviskochel/planetasia/issues"
+  },
+  "homepage": "https://github.com/traviskochel/planetasia#readme"
+}
