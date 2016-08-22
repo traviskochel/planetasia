@@ -1,0 +1,38 @@
+@mixin clearfix(){
+  &:before,
+  &:after{
+    content: " "; 
+    display: table; 
+  }
+
+  &:after{
+    display: block;
+    clear: both;
+    height: 1px;
+    margin-top: -1px;
+    visibility: hidden;
+  }
+  &{
+    *zoom: 1;
+  }
+}
+
+
+@mixin links($l-color, $b-width: 2px){
+  a {
+    color: $l-color;
+    
+    &:hover {
+      color: rgba($l-color, .7);
+    }
+    &:active {
+      color: rgba($l-color, .5);
+    }
+   }
+}
+
+@mixin breakpoint($m-width, $m-prefix:'min-width'){
+  @media screen and ($m-prefix : $m-width) { 
+    @content; 
+  }
+}
